@@ -1,0 +1,20 @@
+{
+  "name": "workflow-module-2-1",
+  "version": "1.0.0",
+  "description": "This is the lesson task from workflow module 2.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomatsuppe11211/workflow-module-2-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomatsuppe11211/workflow-module-2-1/issues"
+  },
+  "homepage": "https://github.com/Tomatsuppe11211/workflow-module-2-1#readme"
+}
