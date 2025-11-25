@@ -1,31 +1,29 @@
-import { describe, expect, it } from "vitest"
-import { greetUser } from "../script/greet"
+import { describe, expect, it } from "vitest";
+import { greetUser } from "../script/greet";
 
-const user = 'John'
+const user = "John";
 
-describe('Gretting different users', () => {
-    it('Checking if John is greeted properly', () => {
-        const input = user
-        const expectedOutput = `Hello there ${user}`
-        const result = greetUser(input)
-        expect(result).toBe(expectedOutput)
-    })
+describe("Gretting different users", () => {
+  it("Checking if John is greeted properly", () => {
+    const input = user;
+    const expectedOutput = `Hello there ${user}`;
+    const result = greetUser(input);
+    expect(result).toBe(expectedOutput);
+  });
 
+  it("Checking if John is the user that we are greeting", () => {
+    const input = user;
+    const result = greetUser("John");
+    expect(result).toContain(input);
+  });
 
-    it('Checking if John is the user that we are greeting', () => {
-        const input = user
-        const result = greetUser('John')
-        expect(result).toContain(input)
-    })
-
-
-    it('Checking if wrong greeting message is returned', () => {
-        const input = user
-        const expectedOutput = `Hello there ${user}`
-        const result = greetUser(input)
-        expect(result).not.toBe(!expectedOutput)
-    })
-})
+  it("Checking if wrong greeting message is returned", () => {
+    const input = user;
+    const expectedOutput = `Hello there ${user}`;
+    const result = greetUser(input);
+    expect(result).not.toBe(!expectedOutput);
+  });
+});
 
 //All gretting works.
 

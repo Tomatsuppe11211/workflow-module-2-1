@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Tomatsuppe11211/workflow-module-2-1#readme",
   "devDependencies": {
     "vitest": "^4.0.14"
+  },
+  "dependencies": {
+    "prettier": "^3.6.2"
   }
 }
